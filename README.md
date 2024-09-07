@@ -10,7 +10,6 @@ This is an **Employee Status Management** system where users can manage employee
 - [Running the Project](#running-the-project)
 - [Docker Setup](#docker-setup)
 - [API Endpoints](#api-endpoints)
-- [Environment Variables](#environment-variables)
 - [Database Seeding](#database-seeding)
 - [Contact](#contact)
 
@@ -33,7 +32,25 @@ This is an **Employee Status Management** system where users can manage employee
 
 ## Project Structure
 
-project-root/ ├── client/ # React (Vite + TypeScript) app │ └── src/ # React components, hooks, etc. ├── server/ # Backend (Node.js + Apollo Server) │ ├── images/ # Static images folder │ ├── models/ # Mongoose models for MongoDB │ ├── resolvers/ # GraphQL resolvers │ ├── schemas/ # GraphQL schema definitions │ └── mockData.js # Mock data for seeding the database ├── .env # Environment variables ├── docker-compose.yml # Docker file for MongoDB ├── README.md # Project documentation └── package.json # Root package.json with scripts for both server and client
+project-root/
+├── client/ # React (Vite + TypeScript)
+│ ├── src/ # React components, hooks, etc.
+│ │ ├── api
+│ │ ├── assets
+│ │ ├── components
+│ │ ├── context
+│ │ ├── enums
+│ │ ├── types
+├── server/ # Backend (Node.js + Apollo Server)
+│ ├── images/ # Static images folder
+│ ├── models/ # Mongoose models for MongoDB
+│ ├── resolvers/ # GraphQL resolvers
+│ ├── schemas/ # GraphQL schema definitions
+│ └── mockData.js # Mock data for seeding the database
+├── .env # Environment variables
+├── docker-compose.yml # Docker file for MongoDB
+├── README.md # Project documentation
+└── package.json # Root package.json with scripts for both server and client
 
 ## Installation
 
@@ -49,11 +66,18 @@ project-root/ ├── client/ # React (Vite + TypeScript) app │ └── sr
 
    ```bash
    git clone https://github.com/maormoyal/ox-status-mgmt.git
-   cd employee-status-mgmt
+   cd ox-status-mgmt
    ```
 
 2. **Install All Dependencies:**
-   Install both backend and frontend dependencies using the following command:
+
+- Install the root dependencies:
+
+  ```bash
+  npm run install
+  ```
+
+  - Install both backend and frontend dependencies using the following command:
 
 ```bash
 npm run install:all
@@ -68,10 +92,6 @@ npm run install:all
 
   2.  **_Start MongoDB with Docker_**
       Once Docker is installed, you can start the MongoDB container using:
-
-```bash
-npm run docker:mongo
-```
 
 ## Running the Project
 
