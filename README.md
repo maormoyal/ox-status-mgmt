@@ -108,7 +108,7 @@ npm run docker:mongo
 npm run dev
 ```
 
-The server will run at http://localhost:4000, and the frontend will be available at http://localhost:3000.
+The server will run at http://localhost:4000, and the frontend will be available at http://localhost:5173/.
 
 ## API Endpoints
 
