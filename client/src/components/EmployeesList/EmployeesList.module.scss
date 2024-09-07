@@ -1,0 +1,9 @@
+.employeesList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  background-color: #f5f6f8;
+  box-sizing: border-box;
+}

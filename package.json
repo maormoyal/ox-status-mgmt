@@ -1,0 +1,15 @@
+{
+  "name": "employee-status-mgmt",
+  "version": "1.0.0",
+  "scripts": {
+    "install:all": "npm install --prefix client && npm install --prefix server",
+    "dev": "npm-run-all --parallel dev:client dev:server",
+    "dev:client": "npm --prefix client run dev",
+    "dev:server": "npm --prefix server run dev",
+    "docker:mongo": "docker-compose up -d",
+    "docker:down": "docker-compose down"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
