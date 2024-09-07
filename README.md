@@ -32,24 +32,24 @@ This is an **Employee Status Management** system where users can manage employee
 
 ## Project Structure
 
-project-root/
-├── client/ # React (Vite + TypeScript)
-│ ├── src/ # React components, hooks, etc.
-│ │ ├── api
-│ │ ├── assets
-│ │ ├── components
-│ │ ├── context
-│ │ ├── enums
-│ │ ├── types
-├── server/ # Backend (Node.js + Apollo Server)
-│ ├── images/ # Static images folder
-│ ├── models/ # Mongoose models for MongoDB
-│ ├── resolvers/ # GraphQL resolvers
-│ ├── schemas/ # GraphQL schema definitions
-│ └── mockData.js # Mock data for seeding the database
-├── .env # Environment variables
-├── docker-compose.yml # Docker file for MongoDB
-├── README.md # Project documentation
+project-root/  
+├── client/ # React (Vite + TypeScript)  
+│ ├── src/ # React components, hooks, etc.  
+│ │ ├── api  
+│ │ ├── assets  
+│ │ ├── components  
+│ │ ├── context  
+│ │ ├── enums  
+│ │ ├── types  
+├── server/ # Backend (Node.js + Apollo Server)  
+│ ├── images/ # Static images folder  
+│ ├── models/ # Mongoose models for MongoDB  
+│ ├── resolvers/ # GraphQL resolvers  
+│ ├── schemas/ # GraphQL schema definitions  
+│ └── mockData.js # Mock data for seeding the database  
+├── .env # Environment variables  
+├── docker-compose.yml # Docker file for MongoDB  
+├── README.md # Project documentation  
 └── package.json # Root package.json with scripts for both server and client
 
 ## Installation
@@ -77,7 +77,7 @@ project-root/
   npm run install
   ```
 
-  - Install both backend and frontend dependencies using the following command:
+- Install both backend and frontend dependencies using the following command:
 
 ```bash
 npm run install:all
@@ -86,7 +86,7 @@ npm run install:all
 3. **Docker Setup**
    To set up Docker for MongoDB:
 
-   1. **_Install Docker:_**
+1. **_Install Docker:_**
 
 - Download Docker Desktop for your platform at https://www.docker.com/products/docker-desktop/
 
